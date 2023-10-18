@@ -7,6 +7,11 @@ require('./db/connection');
 const route = require('./routing/route');
 
 
+myapp.get("/",(req,res)=>{
+    res.send("welcome to express js res full  api");
+})
+
+
 
 
 
@@ -20,5 +25,3 @@ myapp.use(route);
 myapp.listen(port,()=>{
     console.log(`server is runing at: ${port}`);
 })
-
-
